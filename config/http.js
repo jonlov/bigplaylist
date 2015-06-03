@@ -10,6 +10,9 @@
  */
 
 module.exports.http = {
+  middleware: {
+    compress: require('compression')(),
+  }
 
   /****************************************************************************
   *                                                                           *
