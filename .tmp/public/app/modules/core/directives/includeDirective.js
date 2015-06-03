@@ -1,1 +1,0 @@
-define(function(){var e=angular.module("coreModule");e.directive("include",["$http","$templateCache","$compile",function(e,c,n){return{restrict:"A",link:function(t,i,u){var l=t.$eval(u.include);e.get(l,{cache:c}).success(function(e){i.replaceWith(n(e)(t))})}}}])});

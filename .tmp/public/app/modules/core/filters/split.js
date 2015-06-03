@@ -1,1 +1,0 @@
-define(function(){var n=angular.module("coreModule");n.filter("split",function(){return function(n,e,r){return n.split(e)[r]}})});

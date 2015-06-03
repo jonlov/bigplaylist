@@ -1,1 +1,0 @@
-define(function(){angular.module("coreModule").factory("focus",["$timeout",function(n){return function(t){n(function(){var n=document.getElementById(t);n&&n.focus()})}}]).factory("blur",["$timeout",function(n){return function(t){n(function(){var n=document.getElementById(t);n&&n.blur()})}}])});

@@ -1,1 +1,0 @@
-define(function(){angular.module("coreModule").registerController("loginController",["$scope","$translate","$translatePartialLoader","$auth","toastr",function(r,a,e,o,t){e.addPart("login"),a.refresh(),r.login=function(){o.login({email:r.email,password:r.password})["catch"](function(r){t.error(r.data.err?r.data.err:"Unexpected error "+r.data)})}}])});
