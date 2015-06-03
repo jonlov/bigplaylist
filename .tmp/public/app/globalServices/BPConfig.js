@@ -1,0 +1,1 @@
+define(function(){var e=angular.module("coreModule");e.service("BPConfig",function(){var e={apiUrl:"/api"};return e})});

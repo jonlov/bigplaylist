@@ -1,0 +1,1 @@
+define(function(){var n=angular.module("coreModule");n.service("loadUserInfo",["$http","toastr",function(n,e){return function(r){var t=n.get(r+"/user/me").then(function(n){return n.data})["catch"](function(n,r){e.error("Unexpected error "+n.data)})["finally"](function(){$("#loading").hide()});return t}}])});

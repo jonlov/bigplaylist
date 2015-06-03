@@ -1,0 +1,684 @@
+{
+  "data": {
+    "youtube": [],
+    "items": [],
+    "player": [],
+    "playlists": [
+      {
+        "title": "Hip-Hop",
+        "position": 3,
+        "Items": {
+          "0": {
+            "id": "youtube$pCx5Std7mCo",
+            "title": "Harder Than You Think [OFFICIAL VIDEO]"
+          },
+          "1": {
+            "id": "youtube$phaJXp_zMYM",
+            "title": "The Notorious B.I.G. - \"Big Poppa\""
+          },
+          "2": {
+            "id": "youtube$W69SSLfRJho",
+            "title": "Life Goes On - Tupac"
+          },
+          "3": {
+            "id": "youtube$Mb1ZvUDvLDY",
+            "title": "2Pac - Dear Mama"
+          },
+          "4": {
+            "id": "youtube$_JZom_gVfuw",
+            "title": "The Notorious B.I.G. - \"Juicy\" (Official Video)"
+          },
+          "5": {
+            "id": "youtube$tAlkliGqxx0",
+            "title": "Snoop Dogg - Smoke Weed Everyday"
+          },
+          "6": {
+            "id": "youtube$Iw8E5YL8YGk",
+            "title": "Apache ft jey da polemic - High grade (Audio)"
+          },
+          "7": {
+            "id": "youtube$FGH7GruFICs",
+            "title": "tabu - apache afinando"
+          },
+          "8": {
+            "id": "youtube$uvLSj4gRq-Q",
+            "title": "Wiz Khalifa - So High ft. Ghost Loft [Official Audio]"
+          },
+          "9": {
+            "id": "youtube$D5nVfHryV1Y",
+            "title": "Apache Pásame la Yesca"
+          },
+          "10": {
+            "id": "youtube$Lo7O6bn5DTY",
+            "title": "Big Poppa - Akapellah"
+          },
+          "11": {
+            "id": "youtube$R_q6aRwoV3M",
+            "title": "Snoop Dogg - California Roll (Audio) ft. Stevie Wonder"
+          },
+          "12": {
+            "id": "youtube$ibz2UWBAn30",
+            "title": "Wiz  Khalifa - Good For Us (Official Audio)"
+          },
+          "13": {
+            "id": "youtube$otCsqeMqqlM",
+            "title": "MGK - Mind Of A Stoner ft. Wiz Khalifa (Lyrics)"
+          }
+        },
+        "owner": 6,
+        "id": 65,
+        "createdAt": "2015-05-18T08:16:45.942Z",
+        "updatedAt": "2015-05-20T05:55:57.356Z"
+      },
+      {
+        "title": "Reggaeton",
+        "Items": {},
+        "owner": 6,
+        "id": 84,
+        "createdAt": "2015-05-18T19:11:45.966Z",
+        "updatedAt": "2015-05-19T09:47:16.214Z"
+      },
+      {
+        "title": "Reggae",
+        "Items": {
+          "0": {
+            "id": "youtube$L6gya6Fzurw",
+            "title": "UB40 - Red Red Wine Lyrics!"
+          },
+          "1": {
+            "id": "youtube$TqzTFKC-ydg",
+            "title": "Tu eres como el fuego-Morodo"
+          },
+          "2": {
+            "id": "youtube$SyPfnWv5LVU",
+            "title": "MORODO - \"FUMO MARIHUANA\" -prod.Heavy Roots - 2013"
+          },
+          "3": {
+            "id": "youtube$fmF7mpGIcro",
+            "title": "Morodo - Mas yama"
+          },
+          "4": {
+            "id": "youtube$GAbclsAUzkg",
+            "title": "Morodo - Que vas hacer?"
+          },
+          "5": {
+            "id": "youtube$KkBD6OK_Rtw",
+            "title": "Morodo - La Mentira"
+          },
+          "6": {
+            "id": "youtube$EorWoD-S574",
+            "title": "King Chango - Sin ti (Mas letra)"
+          },
+          "7": {
+            "id": "youtube$esUR3LnEIdE",
+            "title": "Morodo  - Yo me pregunto ... con letra"
+          },
+          "8": {
+            "id": "youtube$jX0HTaZlwxg",
+            "title": "Morodo - Binghi No Cry"
+          },
+          "9": {
+            "id": "youtube$WpIAc9by5iU",
+            "title": "Max Romeo - Chase The Devil"
+          },
+          "10": {
+            "id": "youtube$ZAHudpRmknQ",
+            "title": "Gregory Isaacs - Night Nurse"
+          },
+          "11": {
+            "id": "youtube$tcjDE3t_sDQ",
+            "title": "Los Cafres - Si El Amor Se Cae"
+          },
+          "12": {
+            "id": "youtube$UEv-aXRpGVg",
+            "title": "Barrington Levy - Black Roses"
+          },
+          "13": {
+            "id": "youtube$y07vgARrOUE",
+            "title": "Bob Marley - Concrete Jungle"
+          },
+          "14": {
+            "id": "youtube$LTCyZvb2Uzw",
+            "title": "santeria- Sublime"
+          },
+          "15": {
+            "id": "youtube$C9AIuSzUq1w",
+            "title": "Sojah - So High with Lyrics"
+          },
+          "16": {
+            "id": "youtube$uDAMR0lHcIw",
+            "title": "Ziggy Marley - A Lifetime"
+          },
+          "17": {
+            "id": "youtube$7Y6ihWvymwg",
+            "title": "Damian Marley- More Justice"
+          },
+          "18": {
+            "id": "youtube$WJ4UkBZfRYk",
+            "title": "Gregory Isaacs - Hot Stepper"
+          },
+          "19": {
+            "id": "youtube$PIh2xe4jnpk",
+            "title": "MAGIC! - Rude"
+          },
+          "20": {
+            "id": "youtube$D--ZSSFMsIg",
+            "title": "Ziggy Marley(Beach In Hawaii)"
+          },
+          "21": {
+            "id": "youtube$cUCls4kHAng",
+            "title": "Los Pericos-Runaway"
+          },
+          "22": {
+            "id": "youtube$Xda02V8KLzU",
+            "title": "Damian Marley - There For You"
+          }
+        },
+        "owner": 6,
+        "id": 95,
+        "createdAt": "2015-05-18T19:27:39.987Z",
+        "updatedAt": "2015-05-20T05:56:03.970Z"
+      },
+      {
+        "title": "Reggaeton",
+        "Items": {
+          "0": {
+            "id": "youtube$tHwXr7XzPXY",
+            "title": "Daddy%20Yankee%20-%20S%C3%ADgueme%20y%20Te%20Sigo%20(Video%20Lyric)"
+          }
+        },
+        "owner": 11,
+        "id": 98,
+        "createdAt": "2015-05-19T05:46:31.683Z",
+        "updatedAt": "2015-05-19T05:46:31.683Z"
+      },
+      {
+        "title": "Bachata",
+        "Items": {
+          "0": {
+            "id": "youtube$W8r-eIhp4j0",
+            "title": "Romeo%20Santos%20-%20Odio%20Feat.%20Drake%20(Lyric%20Video)"
+          }
+        },
+        "owner": 6,
+        "id": 99,
+        "createdAt": "2015-05-19T08:24:48.237Z",
+        "updatedAt": "2015-05-20T05:55:54.626Z"
+      },
+      {
+        "title": "Drum And Bass",
+        "Items": {
+          "0": {
+            "id": "youtube$jmGGrv11YnQ",
+            "title": "Calyx%20and%20Teebee%20-%20Anatomy%20(2007)%20-%2004%20All%20That%20Remains"
+          },
+          "1": {
+            "id": "youtube$vyrwMmsufJc",
+            "title": "Noisia &amp; Phace - Program"
+          },
+          "2": {
+            "id": "youtube$CtSxCq5szRc",
+            "title": "Logistics - Murderation"
+          },
+          "3": {
+            "id": "youtube$iBVy1ERO6Xg",
+            "title": "Calyx &amp; TeeBee - Scavenger"
+          },
+          "4": {
+            "id": "youtube$5ws8eUTGgsw",
+            "title": "Noisia, Mefjus &amp; Hybris - Reptilians"
+          }
+        },
+        "owner": 6,
+        "id": 100,
+        "createdAt": "2015-05-19T08:30:58.853Z",
+        "updatedAt": "2015-05-19T08:42:00.804Z"
+      },
+      {
+        "title": "Trap",
+        "Items": {
+          "0": {
+            "id": "youtube$tzCbCuAzgNw",
+            "title": "August Alsina - I Luv This Shit (Explicit) ft. Trinidad James"
+          }
+        },
+        "owner": 6,
+        "id": 101,
+        "createdAt": "2015-05-19T08:36:15.320Z",
+        "updatedAt": "2015-05-20T06:03:14.366Z"
+      },
+      {
+        "title": "R&B",
+        "Items": {
+          "0": {
+            "id": "youtube$kw9ZuNH6-GU",
+            "title": "cassie%20Me%20And%20You%20Lyrics."
+          },
+          "1": {
+            "id": "youtube$sl9voSKJmEU",
+            "title": "One Day- Matisyahu lyrics"
+          },
+          "2": {
+            "id": "youtube$dBrRBZy8OTs",
+            "title": "T-Pain - Buy U A Drank (Shawty Snappin') ft. Yung Joc"
+          },
+          "3": {
+            "id": "youtube$p1AaWyyPrCQ",
+            "title": "Deuces Remix - (Dirty Version) Chris Brown, Drake, Kanye West and Andre 3000"
+          }
+        },
+        "owner": 6,
+        "id": 102,
+        "createdAt": "2015-05-19T08:36:55.618Z",
+        "updatedAt": "2015-05-19T09:06:05.490Z"
+      },
+      {
+        "title": "Triphop",
+        "Items": {
+          "0": {
+            "id": "youtube$uN9tulBHr8Y",
+            "title": "The%20Richest%20Man%20In%20Babylon%20-%20Thievery%20Corporation%20%5BFull%20Album%5D"
+          },
+          "1": {
+            "id": "youtube$sWJUsOe2bgY",
+            "title": "Thievery Corporation - The Cosmic Game 2005"
+          },
+          "2": {
+            "id": "youtube$wdpDtAjZuWQ",
+            "title": "Bonobo - Sweetness [FULL ALBUM]"
+          },
+          "3": {
+            "id": "youtube$IUPyYPzZiWM",
+            "title": "Best Of Bonobo"
+          },
+          "4": {
+            "id": "youtube$ANJmkL3lOLM",
+            "title": "Massive Attack - Heligoland (Full Album)"
+          },
+          "5": {
+            "id": "youtube$24CgqhCQ8q8",
+            "title": "Massive Attack - Mezzanine (Full Album)"
+          },
+          "6": {
+            "id": "youtube$nRz-yw-wp34",
+            "title": "Korn - Twist"
+          }
+        },
+        "owner": 11,
+        "id": 103,
+        "createdAt": "2015-05-19T11:21:27.967Z",
+        "updatedAt": "2015-05-19T11:25:42.315Z"
+      },
+      {
+        "title": "Metal",
+        "Items": {
+          "0": {
+            "id": "youtube$CSvFpBOe8eY",
+            "title": "System%20Of%20A%20Down%20-%20Chop%20Suey!"
+          },
+          "1": {
+            "id": "youtube$nRz-yw-wp34",
+            "title": "Korn - Twist"
+          },
+          "2": {
+            "id": "youtube$2s3iGpDqQpQ",
+            "title": "Korn - Falling Away from Me (Official Video)"
+          },
+          "3": {
+            "id": "youtube$jRGrNDV2mKc",
+            "title": "Korn - Freak on a Leash"
+          },
+          "4": {
+            "id": "youtube$GJPTPGiD81k",
+            "title": "Mudvayne - L.D. 50 (2000) [Full Album]"
+          }
+        },
+        "owner": 11,
+        "id": 105,
+        "createdAt": "2015-05-19T11:26:34.438Z",
+        "updatedAt": "2015-05-19T11:28:17.364Z"
+      },
+      {
+        "title": "Salsa",
+        "Items": {
+          "0": {
+            "id": "youtube$PpmwQcc1h2g",
+            "title": "hector lavoe= todo tiene su final"
+          },
+          "1": {
+            "id": "youtube$jX88mBQAnW0",
+            "title": "Oscar D Leon - Detalles (HQ Audio)"
+          },
+          "2": {
+            "id": "youtube$wrfoo4IF-Y0",
+            "title": "En%20Los%20A%C3%B1os%201600%20(Joe%20Arroyo)"
+          },
+          "3": {
+            "id": "youtube$G0hSUDO35w8",
+            "title": "Ojos ChinOs - El Gran Combo"
+          },
+          "4": {
+            "id": "youtube$HNpcYM4siZQ",
+            "title": "HECTOR LAVOE - LA MURGA DE PANAMA"
+          }
+        },
+        "owner": 11,
+        "id": 106,
+        "createdAt": "2015-05-19T11:29:44.199Z",
+        "updatedAt": "2015-05-20T04:25:14.662Z"
+      },
+      {
+        "title": "Bossa Nova",
+        "Items": {
+          "0": {
+            "id": "youtube$zeBDoNBNMro",
+            "title": "MAS%20QUE%20NADA%20-%20Sergio%20Mendez%20and%20Brazil%2066"
+          },
+          "1": {
+            "id": "youtube$qcyirvENsbk",
+            "title": "Ana Caram - Pensava em você"
+          },
+          "2": {
+            "id": "youtube$Rm3pPTx6eHI",
+            "title": "Ana Caram ..Samba de Verão .."
+          }
+        },
+        "owner": 11,
+        "id": 107,
+        "createdAt": "2015-05-19T11:34:46.787Z",
+        "updatedAt": "2015-05-19T11:38:18.755Z"
+      },
+      {
+        "title": "Dub, Jazz, Reggae",
+        "Items": {
+          "0": {
+            "id": "youtube$Y7QQS5V3cnI",
+            "title": "Fat%20Freddys%20Drop%20-%20Based%20On%20A%20True%20Story%20(Full%20Album)"
+          }
+        },
+        "owner": 11,
+        "id": 108,
+        "createdAt": "2015-05-19T11:39:17.848Z",
+        "updatedAt": "2015-05-19T11:39:17.848Z"
+      },
+      {
+        "title": "Reggea",
+        "Items": {
+          "0": {
+            "id": "youtube$Zp9CRAWBPhg",
+            "title": "Morodo - Rap 'n Party [2010]"
+          },
+          "1": {
+            "id": "youtube$FphO_5BZuKk",
+            "title": "Steel Pulse - Steppin' Out"
+          },
+          "2": {
+            "id": "youtube$D--ZSSFMsIg",
+            "title": "Ziggy Marley(Beach In Hawaii)"
+          },
+          "3": {
+            "id": "youtube$Nn80Rbq2lHc",
+            "title": "Steel Pulse - Tightrope"
+          }
+        },
+        "owner": 12,
+        "id": 109,
+        "createdAt": "2015-05-19T12:45:04.088Z",
+        "updatedAt": "2015-05-19T12:50:18.869Z"
+      }
+    ],
+    "soundcloud": [],
+    "user": [
+      {
+        "email": "rockjonathan18@gmail.com",
+        "picture": "https://lh6.googleusercontent.com/-lXsirAms4GI/AAAAAAAAAAI/AAAAAAAAAhE/qBRH2BWCTmk/photo.jpg?sz=200",
+        "name": "Jonathan Lovera",
+        "password": "c29e03b6490719a7577b208f30a9c58f",
+        "googleToken": "ya29.YAG7Nb11uGEQ6Qw_RyjKcLkL7jGebWMw6NFndaQmvGaW2-I_4P1HTtjGAhY_g_kN23sFi5y_gqcR0A",
+        "google": "116535315233203865079",
+        "youtubeRefreshToken": "1/fWzf9i2YZJE3xz4LlkrxjvXsMkXf6-QBGNTlfiR4_aAMEudVrK5jSpoR30zcRFq6",
+        "id": 6,
+        "createdAt": "2015-04-25T03:33:52.788Z",
+        "updatedAt": "2015-05-21T18:23:22.101Z"
+      },
+      {
+        "email": "lauraponce01@gmail.com",
+        "picture": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=200",
+        "name": "Laura P",
+        "password": "45eb5824efa7af93a223ee09c98807b6",
+        "googleToken": "ya29.bwHH2CDLDh-UHR9zBIcEH-_r3Felayn0ESeHuaCLNSyuTyGgfIBgaf1NU9xHxDb3NpRBN-2zxub6Tg",
+        "google": "105828636607864919235",
+        "youtubeRefreshToken": null,
+        "id": 9,
+        "createdAt": "2015-05-10T03:09:53.136Z",
+        "updatedAt": "2015-05-21T18:25:39.280Z"
+      },
+      {
+        "email": "robert151196@gmail.com",
+        "picture": "https://lh4.googleusercontent.com/-jXZVBMlyAhs/AAAAAAAAAAI/AAAAAAAAAJ4/IETDRpwWUIM/photo.jpg?sz=200",
+        "name": "Robert Williams",
+        "password": "45eb5824efa7af93a223ee09c98807b6",
+        "googleToken": "ya29.bwEA94xZ_5FUBrX6aR0IrOyFnHYDJIuiINmkBx1c9HsgaYSeW7xwDpivSwoUPBBkAH8HYojd5UWbhA",
+        "google": "102631305290553747640",
+        "youtubeRefreshToken": null,
+        "id": 10,
+        "createdAt": "2015-05-10T14:47:46.112Z",
+        "updatedAt": "2015-05-21T18:25:29.091Z"
+      },
+      {
+        "email": "bola.gasa@gmail.com",
+        "picture": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=200",
+        "name": "bola gasa",
+        "password": "12281bf29a98c61abea19c32e128f5aa",
+        "googleToken": "ya29.dgFIcqh8rTDp7r60JS1FHSDdSpTOjTbrWQOEnSHR-GFE6eR4ZyCVTkXU9Zz9o6z0h6oEvUxHOyrFCg",
+        "google": "112354908716844760735",
+        "youtubeRefreshToken": null,
+        "id": 11,
+        "createdAt": "2015-05-17T02:03:58.127Z",
+        "updatedAt": "2015-05-21T18:25:17.131Z"
+      },
+      {
+        "email": "franciscojarbelo@gmail.com",
+        "picture": "https://lh3.googleusercontent.com/-U08Jlo_N2m0/AAAAAAAAAAI/AAAAAAAAAFM/672VykTESnA/photo.jpg?sz=200",
+        "name": "Francisco Arbelo",
+        "password": "45eb5824efa7af93a223ee09c98807b6",
+        "googleToken": "ya29.eAHucj6ZMeBDXMoPqE3dX4v56cljrMh_0ZOdbNmgBhng6rConKzNiZvh6K8oKC20ORWhQB3-eoeXmQ",
+        "google": "112615107299199355862",
+        "youtubeRefreshToken": null,
+        "id": 12,
+        "createdAt": "2015-05-19T12:43:01.454Z",
+        "updatedAt": "2015-05-21T18:25:02.672Z"
+      },
+      {
+        "email": "jquintana@qualitasassistance.com",
+        "picture": "https://lh6.googleusercontent.com/-WYWYHQjlSEM/AAAAAAAAAAI/AAAAAAAAABQ/gzWB9xP6a4E/photo.jpg?sz=200",
+        "name": "Julio Quintana",
+        "password": "45eb5824efa7af93a223ee09c98807b6",
+        "googleToken": "ya29.eAHCO7q-gNs5vSv6rzhB4OCmdCapJKvFC3VFFvLqD_9ftptSeRI7hvovzuJUKL2Q-Kh8h5b9kM4gOQ",
+        "google": "110804844458645439561",
+        "youtubeRefreshToken": null,
+        "id": 13,
+        "createdAt": "2015-05-19T13:38:13.703Z",
+        "updatedAt": "2015-05-21T18:24:49.904Z"
+      },
+      {
+        "email": "anjullylozano@gmail.com",
+        "picture": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=200",
+        "name": "Anjully Lozano",
+        "password": "2f73545c627187c638d002dcd6a3a8dc",
+        "googleToken": "ya29.eQFaX-IefLjoLmFrrvA8yy5A9Zc0Co3M6CacmjQqrdZXm3zxJW81-w4umjB38AI_ToZOXPWKNzpYhg",
+        "google": "117287936761798811302",
+        "youtubeRefreshToken": null,
+        "id": 14,
+        "createdAt": "2015-05-20T04:53:12.051Z",
+        "updatedAt": "2015-05-21T18:23:50.685Z"
+      },
+      {
+        "email": "rar@ra",
+        "password": "c582dec943ff7b743aa0691df291cea6",
+        "createdAt": "2015-05-22T07:52:39.328Z",
+        "updatedAt": "2015-05-22T07:52:39.328Z",
+        "id": 15
+      }
+    ]
+  },
+  "schema": {
+    "youtube": {
+      "youtube": {
+        "type": "string"
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "items": {
+      "name": {
+        "type": "string"
+      },
+      "kindId": {
+        "type": "string",
+        "unique": true
+      },
+      "kind": {
+        "type": "string",
+        "enum": [
+          "yt",
+          "sc"
+        ]
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "player": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "playlists": {
+      "title": {
+        "type": "string"
+      },
+      "position": {
+        "type": "integer"
+      },
+      "Items": {
+        "type": "json",
+        "defaultsTo": null
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "soundcloud": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "picture": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "googleToken": {
+        "type": "string"
+      },
+      "google": {
+        "type": "string"
+      },
+      "youtubeRefreshToken": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 15
+    },
+    "youtube": {},
+    "playlists": {
+      "id": 109
+    },
+    "player": {},
+    "soundcloud": {},
+    "items": {}
+  }
+}
