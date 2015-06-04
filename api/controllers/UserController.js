@@ -15,11 +15,11 @@ module.exports = {
 			if (existingUser) {
 				if(existingUser.picture) var picture = existingUser.picture;
 				else var picture = '';
-
-				var User = {'id': existingUser.objectId,
+				
+				var User = {'id': existingUser.id,
 							'name': existingUser.name,
 							'email': existingUser.email,
-							'picture': existingUser.picture};
+							'picture': picture};
 				res.send({user: User});
 			} else {
 				return res.status(401).send({
@@ -44,10 +44,13 @@ module.exports = {
 				password: password
 			}, function(err, existingUser) {
 				if (existingUser) {
+					if(existingUser.picture) var picture = existingUser.picture;
+					else var picture = '';
+
 					var token = functions.createToken({'id': existingUser.id,
 						                              'name': existingUser.name,
 						                              'email': existingUser.email,
-						                              'picture': existingUser.picture});
+						                              'picture': picture});
 					res.send({
 						token: token
 					});
