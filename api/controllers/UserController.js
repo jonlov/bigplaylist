@@ -7,7 +7,6 @@
 var request = require('request');
 var jwt = require('jwt-simple');
 var qs = require('querystring');
-var md5 = require('MD5');
 
 module.exports = {
 	// USER INFO 
