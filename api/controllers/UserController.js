@@ -15,7 +15,7 @@ module.exports = {
 			if (existingUser) {
 				if(existingUser.picture) var picture = existingUser.picture;
 				else var picture = '';
-
+				
 				var User = {'id': existingUser.id,
 							'name': existingUser.name,
 							'email': existingUser.email,
@@ -63,8 +63,6 @@ module.exports = {
 		}
 
 		if(validateEmail(email)){
-			console.log(validateEmail(email));
-			console.log(email);
 			User.findUser({
 				email: email
 			}, function(err, existingEmail) {
