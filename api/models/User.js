@@ -13,12 +13,14 @@ module.exports = {
 			unique: true,
 			lowercase: true 
 		},
+		emailVerified: 'boolean',
 		picture: {
 			type: 'string',
 			url: true
 		},
 		name: 'string',
-		password: 'string',
+		username: 'string',
+		bcryptPassword: 'string',
 		googleToken: 'string',
 		google: 'string',
 		youtubeRefreshToken: 'string'

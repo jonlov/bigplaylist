@@ -12,15 +12,13 @@ var md5 = require('MD5');
 module.exports = {
 	// USER INFO 
 	me: function(req, res) {
-		User.findOne({objectId: req.userId}, function(err, existingUser) {
+		User.getUser({objectId: req.userId['objectId']}, function(err, existingUser) {
 			if (existingUser) {
 				var User = {'id': existingUser.id,
 							'name': existingUser.name,
 							'email': existingUser.email,
 							'picture': existingUser.picture};
 				res.send({user: User});
-				// 	var token = createToken(existingUser);
-				// 	return res.send({ token: token });
 			} else {
 				return res.status(401).send({
 					err: 'Unathorized.'
@@ -31,37 +29,52 @@ module.exports = {
 	// NORMAL LOGIN 
 	login: function(req, res) {
 		var email = req.body.email;
-		var passwordEncoded = md5(req.body.password);
+		var password = req.body.password;
 
-		User.findOne({
-			email: email,
-			password: passwordEncoded
-		}, function(err, existingUser) {
-			if (existingUser) {
-				var token = functions.createToken({'id': existingUser.id,
-					                              'name': existingUser.name,
-					                              'email': existingUser.email,
-					                              'picture': existingUser.picture});
-				res.send({
-					token: token
-				});
-				// 	var token = createToken(existingUser);
-				// 	return res.send({ token: token });
-			} else {
-				return res.status(401).send({
-					err: 'Wrong email or password.'
-				});
-			}
-		});
-		// if (req.headers.authorization) {
-		// } else {
-		//     // Step 3b. Create a new user account or return an existing one.
-		//     User.findOne({ google: profile.sub }, function(err, existingUser) {
-		//       if (existingUser) {
-		//         return res.send({ token: functions.createToken(existingUser) });
-		//       }
-		//     });		
-		// }
+		function validateEmail(email) {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+			return re.test(email);
+		}
+
+		function login(username, password){
+			User.login({
+				username: username,
+				password: password
+			}, function(err, existingUser) {
+				if (existingUser) {
+					var token = functions.createToken({'id': existingUser.id,
+						                              'name': existingUser.name,
+						                              'email': existingUser.email,
+						                              'picture': existingUser.picture});
+					res.send({
+						token: token
+					});
+				} else {
+					return res.status(401).send({
+						err: 'Wrong username or password.'
+					});
+				}
+			});
+		}
+
+		if(validateEmail(email)){
+			User.findUser({
+				email: email
+			}, function(err, existingEmail) {
+				if (existingEmail) {
+					var username = existingEmail[0].username;
+					login(username, password);
+
+				} else {
+					return res.status(401).send({
+						err: 'Wrong email.'
+					});
+				}
+			});
+		} else {
+			login(email, password);
+
+		}
 	},
 	// TWITTER
 	twitter: function(req, res) {

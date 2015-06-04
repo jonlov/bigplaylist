@@ -16,7 +16,9 @@ module.exports = function (req, res, next) {
 
 	if(!payload.sub) return handleError();
 
-	req.userId = payload.sub;
+	req.userId = {"__type": "Pointer",
+                  "className": "_User",
+                  "objectId": payload.sub};
 
 	next();
 };
