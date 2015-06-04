@@ -84,6 +84,6 @@ module.exports = {
     // host: '192.168.2.6',
     // port: '1337',
     //port: 80,
-    //environment: 'production'
+    environment: 'production'
 
 };

@@ -7,6 +7,7 @@
 var request = require('request');
 var jwt = require('jwt-simple');
 var qs = require('querystring');
+var base64_decode = require('base64').decode;
 
 module.exports = {
 	// USER INFO 
@@ -30,8 +31,15 @@ module.exports = {
 	},
 	// NORMAL LOGIN 
 	login: function(req, res) {
-		var email = req.body.email;
-		var password = req.body.password;
+		var all = req.body[0];
+		var CSRF = req.headers['x-csrf-token'];
+
+		var allDecoded = base64_decode(all).split('|');
+		var emailSplit = base64_decode(allDecoded[0]).split('$');
+		var passwordSplit = base64_decode(allDecoded[1]).split('$');
+
+		var email = emailSplit[0];
+		var password = passwordSplit[0];
 
 		function validateEmail(email) {
 			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
