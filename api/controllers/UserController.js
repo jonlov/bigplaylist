@@ -13,7 +13,10 @@ module.exports = {
 	me: function(req, res) {
 		User.getUser({objectId: req.userId['objectId']}, function(err, existingUser) {
 			if (existingUser) {
-				var User = {'id': existingUser.id,
+				if(existingUser.picture) var picture = existingUser.picture;
+				else var picture = '';
+
+				var User = {'id': existingUser.objectId,
 							'name': existingUser.name,
 							'email': existingUser.email,
 							'picture': existingUser.picture};
