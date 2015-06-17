@@ -30,6 +30,9 @@ module.exports.policies = {
 
   UserController: {
     me: ['jwtAuth', 'noCache'],
+    reportSockets: ['jwtAuth', 'noCache'],
+    notifyNewSocket: ['jwtAuth', 'noCache'],
+    logout: ['jwtAuth', 'noCache'],
     login: true,
     google: false,
     //youtube: true,
@@ -38,13 +41,11 @@ module.exports.policies = {
   PlaylistsController: {
     me: ['jwtAuth', 'noCache'],
     create: ['jwtAuth', 'noCache'],
-    destroy: ['jwtAuth', 'noCache'],
+    delete: ['jwtAuth', 'noCache'],
+    reOrder: ['jwtAuth', 'noCache'],
+    addOrDeleteItem: ['jwtAuth', 'noCache'],
     prevItem: ['jwtAuth', 'noCache'],
-    nextItem: ['jwtAuth', 'noCache'],
-    mePlaylistItems: ['jwtAuth', 'noCache'],
-    reorder: ['jwtAuth', 'noCache'],
-    addItem: ['jwtAuth', 'noCache'],
-    destroyItem: ['jwtAuth', 'noCache']
+    nextItem: ['jwtAuth', 'noCache']
 
   },
 
@@ -56,6 +57,11 @@ module.exports.policies = {
 
   SoundcloudController: {
     search: ['jwtAuth', 'noCache']
+
+  },
+
+  PlayerController: {
+    sync: ['jwtAuth']
 
   }
 

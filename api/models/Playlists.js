@@ -1,21 +1,28 @@
 /**
-* Youtube.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * Youtube.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
 
 module.exports = {
+	connection: 'parse',
 	attributes: {
 		title: 'string',
 		position: {
 			type: 'integer'
 		},
 		Items: {
-	        type: 'json',
-	        defaultsTo: null
-	    },
-		owner: 'string'
+			type: 'json',
+			defaultsTo: null
+		},
+		items: {
+			type: 'array',
+			defaultsTo: []
+		},
+		owner: {
+			type: 'json',
+			unique: true
+		}
 	}
 };
-

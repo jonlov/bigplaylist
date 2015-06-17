@@ -12,22 +12,146 @@ var base64 = require('js-base64').Base64;
 module.exports = {
 	// USER INFO 
 	me: function(req, res) {
-		User.getUser({objectId: req.userId['objectId']}, function(err, existingUser) {
-			if (existingUser) {
-				if(existingUser.picture) var picture = existingUser.picture;
-				else var picture = '';
-				
-				var User = {'id': existingUser.id,
-							'name': existingUser.name,
-							'email': existingUser.email,
-							'picture': picture};
-				res.send({user: User});
-			} else {
-				return res.status(401).send({
-					err: 'Unathorized.'
+		// LOG SOCKET
+		if (req.isSocket) {
+			// var random = Math.round(Math.random() * 100);
+
+			var socket = req.socket;
+			var io = sails.io;
+			var headers = req.headers;
+			var userId = req.userId['objectId'];
+			var roomClients = io.sockets.adapter.rooms[userId];
+
+			var cookieID = headers.cookie.split('sails.sid=')[1].split(';');
+			var cookieIDEncoded = jwt.encode(cookieID[0], config.TOKEN_SECRET);
+			res.send(cookieIDEncoded);
+			if (!roomClients) {
+				socket.join(userId);
+
+			} else if (roomClients && !roomClients[socket.id]) {
+				socket.join(userId);
+				socket.broadcast.to(userId).emit('loggedIn', {
+					id: socket.id,
+					device: headers.device,
+					browser: headers.browser,
+					session: cookieIDEncoded,
+					response: false
 				});
 			}
-		});
+
+		} else {
+			User.getUser({
+				objectId: req.userId['objectId']
+			}, function(err, existingUser) {
+				if (existingUser) {
+					if (existingUser.picture) var picture = existingUser.picture;
+					else var picture = '';
+
+					var cookieID = req.headers.cookie.split('sails.sid=')[1].split(';');
+					var cookieIDEncoded = jwt.encode(cookieID[0], config.TOKEN_SECRET);
+					var userDevice = req.headers.device;
+					var securityToken = jwt.encode(existingUser.id + '$' + cookieIDEncoded + '$' + userDevice, config.TOKEN_SECRET);
+
+					var User = {
+						'id': existingUser.id,
+						'name': existingUser.name,
+						'email': existingUser.email,
+						'picture': picture
+					};
+
+					res.clearCookie('me?el');
+					res.cookie('me?el', securityToken, {
+						expires: new Date(Date.now() + 360 * 24 * 60 * 60 * 1000)
+					}).send(User);
+				} else {
+					return res.status(401).send({
+						err: 'Unathorized.'
+					});
+				}
+			});
+		}
+	},
+	// Notify to new logged sockets
+	notifyNewSocket: function(req, res) {
+		if (req.isSocket) {
+			var socket = req.socket;
+			var io = sails.io;
+			var headers = req.headers;
+			var userId = req.userId['objectId'];
+			var roomClients = io.sockets.adapter.rooms[userId];
+
+			var cookieID = headers.cookie.split('sails.sid=')[1].split(';');
+			var cookieIDEncoded = jwt.encode(cookieID[0], config.TOKEN_SECRET);
+			var socketId = headers.toNotify;
+
+			if (roomClients && roomClients[socketId])
+				io.sockets.connected[socketId].emit('loggedIn', {
+					id: socket.id,
+					device: headers.device,
+					browser: headers.browser,
+					session: cookieIDEncoded,
+					response: false
+				});
+		}
+
+	},
+	// Notify to new logged sockets
+	reportSockets: function(req, res) {
+		if (req.isSocket) {
+			var socket = req.socket;
+			var io = sails.io;
+			var userId = req.userId['objectId'];
+			var roomClients = io.sockets.adapter.rooms[userId];
+
+			if (roomClients && roomClients[socket.id]) {
+				socket.broadcast.to(userId).emit('report', {
+					id: socket.id,
+					response: true
+				});
+
+			}
+		}
+
+	},
+	// USER INFO 
+	logout: function(req, res) {
+		// LOG SOCKET
+		if (req.isSocket) {
+			var io = sails.io;
+			var socket = req.socket;
+			var isLogged = socket.handshake.headers.cookie.indexOf(' me?el=');
+			if (isLogged > -1) {
+
+				//JWT with user id $ session $ device
+				var userDataJWT = socket.handshake.headers.cookie.split(' me?el=')[1].split(';')[0];
+				var userData = jwt.decode(userDataJWT, config.TOKEN_SECRET);
+				var userId = userData.split('$')[0];
+				var userSession = userData.split('$')[1];
+				var userDevice = userData.split('$')[2];
+				var roomClients = io.sockets.adapter.rooms[userId];
+
+				// Session stuffs
+				var cookieSession = socket.handshake.headers.cookie.split('sails.sid=')[1].split(';');
+				var userSessionDecoded = jwt.decode(userSession, config.TOKEN_SECRET);
+
+				// Comprobate that the session is valid and userId exist
+				if (userId != undefined && userDevice != undefined && userSessionDecoded) {
+					if (roomClients && roomClients[socket.id]) {
+						socket.broadcast.to(userId).emit('loggedOut', {
+							id: socket.id,
+							session: userSession,
+							device: userDevice
+						});
+						socket.leave(userId);
+						res.send('Logout successfully.')
+					}
+				}
+			}
+
+		} else {
+			res.clearCookie('me?el');
+			res.send(200).end();
+		}
 	},
 	// NORMAL LOGIN 
 	login: function(req, res) {
@@ -40,26 +164,27 @@ module.exports = {
 
 		var email = emailSplit[0];
 		var password = passwordSplit[0];
-		console.log(email);
 
 		function validateEmail(email) {
 			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 			return re.test(email);
 		}
 
-		function login(username, password){
+		function login(username, password) {
 			User.login({
 				username: username,
 				password: password
 			}, function(err, existingUser) {
 				if (existingUser) {
-					if(existingUser.picture) var picture = existingUser.picture;
+					if (existingUser.picture) var picture = existingUser.picture;
 					else var picture = '';
 
-					var token = functions.createToken({'id': existingUser.id,
-						                              'name': existingUser.name,
-						                              'email': existingUser.email,
-						                              'picture': picture});
+					var token = functions.createToken({
+						'id': existingUser.id,
+						'name': existingUser.name,
+						'email': existingUser.email,
+						'picture': picture
+					});
 					res.send({
 						token: token
 					});
@@ -71,7 +196,7 @@ module.exports = {
 			});
 		}
 
-		if(validateEmail(email)){
+		if (validateEmail(email)) {
 			User.findUser({
 				email: email
 			}, function(err, existingEmail) {

@@ -1,1 +1,1 @@
-define(function(){angular.module("coreModule").registerController("homeController",["$scope","$location","$translate","$translatePartialLoader","BPConfig",function(e,r,a,o,l){var n=r.search().q,t=r.search().reload;t&&1==t&&r.path("/search").search({q:n})}])});
+define(function(){angular.module("coreModule").registerController("homeController",["$scope","$translate","$translatePartialLoader",function(e,o,r){}])});

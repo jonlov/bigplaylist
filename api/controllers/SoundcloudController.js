@@ -26,7 +26,7 @@ module.exports = {
 		    //res.status(200).end();
 		} else {
 			//var results = config.SOUNDCLOUD;
-			var snippetApiUrl = 'https://api.soundcloud.com/tracks.json?limit=30&q='+ slug +'&linked_partitioning=1'+ page +'&filter=alls&client_id='+config.SOUNDCLOUD_CLIENTID;
+			var snippetApiUrl = 'https://api.soundcloud.com/tracks.json?limit=25&q='+ slug +'&linked_partitioning=1'+ page +'&filter=alls&client_id='+config.SOUNDCLOUD_CLIENTID;
 			request.get({ url: snippetApiUrl, json: true }, function(err, response, results) {
 				var Resultspurs = [];
 				var purs = [];

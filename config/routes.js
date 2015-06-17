@@ -33,17 +33,23 @@ module.exports.routes = {
   ***************************************************************************/
 
   // '/': {
-  //   view: 'index.html'
+  //   view: 'homepage'
   // },
+
+  // PLAYLISTS
   'GET /api/playlists': 'PlaylistsController.me',
+  'GET /api/playlists/create': 'PlaylistsController.create',
+  'POST /api/playlists/delete': 'PlaylistsController.delete',
+  'POST /api/playlists/:id/items/reorder': 'PlaylistsController.reOrder',
+  'POST /api/playlists/item/addOrDeleteItem': 'PlaylistsController.addOrDeleteItem',
   'GET /api/playlists/:id/prev/:item': 'PlaylistsController.prevItem',
   'GET /api/playlists/:id/next/:item': 'PlaylistsController.nextItem',
-  'GET /api/playlists/:id/items': 'PlaylistsController.mePlaylistItems',
-  'POST /api/playlists/:id/items/reorder': 'PlaylistsController.reorder',
-  'POST /api/playlists/item/add': 'PlaylistsController.addItem',
-  'GET /api/playlists/:id/destroy/:itemId': 'PlaylistsController.destroyItem',
+
+  // SEARCH
   'GET /api/youtube/search/:q/:pageToken': 'YoutubeController.search',
   'GET /api/soundcloud/search/:q/:page': 'SoundcloudController.search',
+
+  //PLAYER
   'GET /api/player/:video/:playlist': 'PlayerController.index'
 
 
